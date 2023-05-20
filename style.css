@@ -52,10 +52,15 @@ body{
 .accordion-button:not(.collapsed)::after{
     background-image: url(./img/plus.png);
     transform: rotate(-45deg);
+
 }
 .accordion-button:not(.collapsed){
     background-color: rgb(45, 45, 45);
     color: #ffffff;
+    box-shadow: none;
+}
+.accordion-button.collapsed{
+    box-shadow: none;
 }
 @media(911px){
     .accordion-item{
@@ -65,8 +70,8 @@ body{
         margin: 0 auto;
     }
     .accordion{
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
